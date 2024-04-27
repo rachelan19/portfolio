@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cicero's Pizza</title>
+<link rel="stylesheet" href="style.css">
+<style>
+ 
+.reviews {
+    font-family: 'BodoniFont', sans-serif;
+
+}
+
+.reviews-images-container {
+    display: flex;
+}
+
+.reviews, .images {
+    flex: 1;
+    padding: 20px;
+    margin: 0; 
+}
+
+.reviews {
+    background-color: #ffc87b;
+}
+
+.images {
+    background-color: #c44b27; padding-top: 90px
+}
+
+.yelp-review {
+    background-color: #ffffff;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.image-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 0;
+}
+
+.image-square {
+    width: calc(50% - 10px); 
+    height: 200px; 
+    margin-right: 10px; 
+    background-color: #fff;
+    display: block;
+    object-fit: cover; 
+    margin-right: 0;
+}
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .reviews, .images {
+        width: 100%; 
+        margin: 0; 
+        padding: 20px; 
+    }
+
+    .image-row {
+        flex-direction: column}
+
+    .image-square {
+        width: 60%; 
+        height: auto; 
+        margin-bottom: 10px; 
+    margin-right: 0;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .reviews-images-container {
+        flex-direction: column; 
+    }
+
+    .reviews, .images {
+        width: 100%; 
+        margin: 0; 
+        padding: 0px; 
+    }
+
+    .image-row {
+        flex-direction: column
+    }
+
+    .image-square {
+        width: 100%; 
+        height: auto; 
+        margin-bottom: 10px; 
+     margin-right: 0;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<div class="navbar">
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="hours.html">Hours & Location</a>
+     <a href="menu.pdf" target="_blank">Menu</a>
+    <a href="order.html" class="order-right">Order Now</a>
+</div>
+
+
+<div class="header">
+    <h1>Cicero's Pizza</h1>
+</div>
+
+<img src="img/counter.jpg" alt="Cicero's Counter" class="image-banner">
+
+<div class="main-content">
+    <h2>Welcome to Cicero's Pizza!</h2>
+    <p>At Cicero’s Pizza, we make a great product for a great value. Our thin crispy crust combined with other fresh ingredients make our pizza unique.</p>
+    
+    <p>The recipe for Cicero’s Pizza originated in Niagara Falls, New York. In 1968, Nunzio Cicero purchased the business that was to become Cicero’s Pizza. Many times Nunzio said that moving to Cupertino from Niagara Falls was “the best move I ever made.” In 1974, Nunzio’s son-in-law Bob LaVerdi joined Cicero’s Pizza. Beginning in 1978, Nunzio’s wife’s grandson, Rik Jones, worked at Cicero’s Pizza while attending college.</p>
+    
+    <p>Cicero’s Pizza grew up with the Santa Clara Valley as it transitioned from an agricultural area to Silicon Valley. Cicero’s original location at the corner of Stevens Creek and DeAnza Boulevard, (Old Highway 9), next to the Cali Brothers Feed Mill, was at the center of Old Cupertino. Many families made a weekly ritual of coming to Cicero’s. When the area was redeveloped, Cicero’s Pizza moved down Stevens Creek to the corner of Blaney Avenue. Business grew as word continued to spread of the great pizza being served at Cicero’s.</p>
+    
+    <p>In June 2001, at the age of 87, Nunzio retired and closed his pizzeria. He passed away soon after on July 27th. In June 2002, Rik Jones and Bob LaVerdi, along with Nunzio’s grandchildren, re-opened Cicero’s Pizza at a new location in West San Jose, just across the Cupertino border.</p>
+    
+    <p>We offer vegetarian and traditional topping pizzas and make it easy for you to order a pizza in person or by telephone. Our menu is online at <a href="http://www.cicerospizza.com" target="_blank">www.cicerospizza.com</a>. Enjoy your Cicero’s Pizza in our dining room or pick up a pie to take home or bring to your next family event.</p>
+</div>
+
+
+<div class="reviews-images-container">
+    <div class="reviews">
+        <h3>Customer Reviews</h3>
+
+        <div class="yelp-review">"Super friendly staff and amazing service - could tell that a lot of the diners were regulars. The restaurant has a casual homey feel which I love. Can't recommend enough!!" -Stella G.</div>
+        <div class="yelp-review">"As for the pizza, it's fantastic. The crispy thin crust has a delicate quality to it. It's perfect for anyone who prefers a unique alternative to the usual thick, chewy pizza crust. The pizza falls right apart, though, so I have to recommend you sit down and eat it hot as intended." -Dan S.</div>
+        <div class="yelp-review">"If it is pizza, this will be the go-to place. I've been there several times over decades, and consistency is something every pizza place should learn from. You need to have the pizza there not to go as the taste degrades when cool but still better than any damn pizza I have had from chicago, New york, etc." -Prem D.</div>
+        <div class="yelp-review">"MY FAVORITE PLACE ON THE PLANET. Pizza here is better than in Italy! It's family owned and operated. I've been going there since I was a baby to the original location and this current location is great!" -Kristen M.</div>
+    </div>
+    <div class="images">
+        <div class="image-row">
+            <img src="img/inside.jpg" alt="Inside Cicero's Pizza" class="image-square">
+            <img src="img/store.jpg" alt="Cicero's Pizza Storefront" class="image-square">
+        </div>
+        <div class="image-row">
+            <img src="img/meat.jpg" alt="Meat Pizza" class="image-square">
+            <img src="img/cheese.jpg" alt="Cheese Pizza" class="image-square">
+        </div>
+    </div>
+</div>
+
+
+<div class="footer">
+    <p>Connect with us on social media!</p>
+    <a href="https://www.yelp.com/biz/ciceros-pizza-san-jose?start=40" target="_blank">
+        <img src="img/yelp-icon.png" alt="Yelp">
+    </a>
+    <a href="https://m.facebook.com/profile.php?id=113890508639507" target="_blank">
+        <img src="img/facebook-icon.png" alt="Facebook">
+    </a>
+     <a href="https://www.instagram.com/cicerospizza/" target="_blank">
+        <img src="img/instagram_icon.png" alt="Instagram">
+    </a>
+</div>
+
+
+</body>
+</html>

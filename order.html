@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Order - Cicero's Pizza</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+   
+    .navbar a#order-right {
+        float: right;
+    }
+
+
+</style>
+</head>
+<body>
+<div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="hours.html">Hours & Location</a>
+     <a href="menu.pdf" target="_blank">Menu</a>
+
+    <a href="order.html" id="order-right" class="active">Order Now</a>
+</div>
+
+
+
+<div class="header">
+    <h1>Cicero's Pizza</h1>
+</div>
+
+<img src="img/counter.jpg" alt="Cicero's Counter" class="image-banner">
+
+
+<div class="main-content">
+    <h2>Order Now</h2>
+<form action="confirmation.html">
+
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required><br><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required><br><br>
+
+        <label for="contactNumber">Contact Number:</label>
+        <input type="tel" id="contactNumber" name="contactNumber" required><br><br>
+
+        <label for="pizzaSize">Pizza Size:</label>
+        <select id="pizzaSize" name="pizzaSize" required>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+        </select><br><br>
+
+          <label for="quantity">Quantity:</label>
+        <select id="quantity" name="quantity" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+               <option value="other">Other - Type in Option</option>
+        </select><br><br>
+  <input type="text" id="otherpizza" name="otherpizza" placeholder="If other, please specify quantity"><br><br>
+
+        <label for="toppings">Toppings:</label>
+        <select id="toppings" name="toppings" required>
+            <option value="ciceros_special">Cicero's Special</option>
+            <option value="bakers_pride">Baker's Pride</option>
+            <option value="belly_buster">Belly Buster</option>
+            <option value="all_meat_combo">All Meat Combo</option>
+            <option value="hawaiian_delight">Hawaiian Delight</option>
+            <option value="chick_pick">Chick Pick</option>
+            <option value="spicy_vegetarian">Spicy Vegetarian</option>
+            <option value="no_meat_treat">No Meat Treat</option>
+            <option value="other">Other - Type in Option</option>
+        </select><br><br>
+
+        <input type="text" id="otherTopping" name="otherTopping" placeholder="If other, please specify"><br><br>
+
+        <label for="salad">Salad:</label>
+        <select id="salad" name="salad">
+            <option value="house_salad">House Salad</option>
+            <option value="caesar_salad">Caesar Salad</option>
+            <option value="none">None</option>
+        </select><br><br>
+
+        <label for="drinks">Drinks:</label>
+        <select id="drinks" name="drinks">
+            <option value="water">Water</option>
+            <option value="soda">Soda</option>
+            <option value="lemonade">Lemonade</option>
+            <option value="none">None</option>
+        </select><br><br>
+
+        <label for="pickupTime">Pick-up Time:</label>
+        <select id="pickupTime" name="pickupTime">
+            <option value="asap">ASAP</option>
+            <option value="other">Other - Type in Answer</option>
+        </select><br><br>
+
+        <input type="text" id="otherPickupTime" name="otherPickupTime" placeholder="If other, please specify"><br><br>
+
+        <button type="submit" value="Submit Order">Submit Order</button>
+    </form>
+
+
+</div>
+
+
+<div class="footer">
+    <p>Connect with us on social media!</p>
+    <a href="https://www.yelp.com/biz/ciceros-pizza-san-jose?start=40" target="_blank">
+        <img src="img/yelp-icon.png" alt="Yelp">
+    </a>
+    <a href="https://m.facebook.com/profile.php?id=113890508639507" target="_blank">
+        <img src="img/facebook-icon.png" alt="Facebook">
+    </a>
+     <a href="https://www.instagram.com/cicerospizza/" target="_blank">
+        <img src="img/instagram_icon.png" alt="Instagram">
+    </a>
+</div>
+
+
+</body>
+</html>
